@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/game', 'GameController@getIndex');
+
+Route::get('/game/add', 'GameController@add');
+
+Route::post('/game/store', 'GameController@store');
